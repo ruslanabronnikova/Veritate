@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>О компании</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl container position-relative">
+      <div class="d-flex flex-row justify-content-between flex-grow-1">
+        <a class="navbar-brand ms-3 me-3" href="/">
+          <img src="./img/logo-dark.svg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-white rounded-5 p-2 justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/about-company.html"
+                >О компании</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/catalog.html"
+                >Продукция</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/actions.html"
+                >Акции</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/blog.html"
+                >Блог</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+
+          <ul class="gap-2 mb-0 me-5 d-flex">
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/Search.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/heart-header.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/cart.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/sign.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#"><img src="./img/logo-dark.svg" /></a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/about-company.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/catalog.html"
+              >Продукция</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/actions.html"
+              >Акции</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/blog.html"
+              >Блог</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/contacts.html"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+
+        <ul class="gap-2 mb-0 me-5 d-flex">
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/Search.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/heart-header.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/cart.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/sign.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <section class="container-fluid p-0">
+      <div class="row position-relative">
+        <div class="overlay"></div>
+        <img class="w-100 p-0" src="./img/main-about-company.png" />
+        <div
+          class="d-flex flex-column justify-content-between position-absolute bottom-0 main-cover align-items-start"
+        >
+          <h1>О компании</h1>
+          <p class="text-1">
+            Мы предлагаем уникальные продукты и возможности, которые помогают
+            вам поддерживать активный образ жизни и заботиться о своем здоровье
+            и внешности.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5">
+      <div class="row">
+        <h2>История и миссия</h2>
+        <div class="col-lg-4 mt-3">
+          <p class="text-1">
+            Наша компания была основана с целью предложить уникальные продукты и
+            бизнес-возможности, которые помогают людям поддерживать активный и
+            здоровый образ жизни. Мы верим, что инвестиции в свое здоровье и
+            внешний вид являются важной частью достижения благополучия и
+            улучшения качества жизни.
+          </p>
+          <img class="rounded-4 mt-3" src="./img/history-01.png" />
+          <p class="text-1 mt-3">
+            Наша миссия — предоставлять высококачественные продукты, которые
+            помогут каждому достичь максимальных результатов и счастья. Мы
+            гордимся тем, что наши клиенты, независимо от их возраста или образа
+            жизни, могут полагаться на нас в вопросах здоровья и красоты. Мы
+            стремимся быть надежным партнером на пути к их лучшему "я".
+          </p>
+        </div>
+
+        <div class="col-lg-8 mt-3 d-flex flex-column justify-content-end align-items-end">
+          <p class="text-1 col-lg-6">
+            Начиная с самого начала, мы стремились создавать продукцию, которая
+            подойдет для людей среднего возраста, начиная от 20 лет и до 60,
+            включая как студентов, так и пенсионеров. Наша аудитория
+            разнообразна по возрасту и статусу, но их объединяет общее
+            стремление к здоровью и красоте.
+          </p>
+          <img class="rounded-4 w-100 mt-3" src="./img/history-02.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <div class="row">
+        <h2>Основные принципы и ценности</h2>
+        <div class="col-lg-4 mt-3">
+          <h4>(01) Качество и инновации</h4>
+          <p class="text-1">
+            Мы стремимся предоставлять продукцию высочайшего качества,
+            соответствующую самым современным стандартам.
+          </p>
+          <img class="rounded-4" src="./img/principe-01.png" />
+        </div>
+        <div class="col-lg-4 mt-3">
+          <ul>
+            <li>
+              <h4>(02) Забота о клиенте</h4>
+              <p class="text-1">
+                Наши клиенты — наше главное достояние. Мы внимательно
+                прислушиваемся к их потребностям и желаниям, стремясь превзойти
+                их ожидания.
+              </p>
+            </li>
+            <li>
+              <h4>(03) Ответственность и честность</h4>
+              <p class="text-1">
+                Ответственность перед клиентами, партнерами и обществом —
+                неотъемлемая часть нашей работы. Честность и открытость помогают
+                нам строить долгосрочные и крепкие отношения.
+              </p>
+            </li>
+            <li>
+              <h4>(04) Команда и сотрудничество</h4>
+              <p class="text-1">
+                Мы верим в силу команды и ценим вклад каждого сотрудника.
+                Сотрудничество внутри компании и с нашими партнерами помогает
+                нам расти и развиваться.
+              </p>
+            </li>
+            <li>
+              <h4>(05) Устойчивое развитие</h4>
+              <p class="text-1">
+                Ответственное использование ресурсов, экологические инициативы и
+                социальная ответственность — важные аспекты нашей деятельности.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <img class="rounded-4 w-100" src="./img/principe-02.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <div class="row gy-4 mt-0 mt-md-4">
+        <h2>Лидеры компании</h2>
+        <div class="col-lg-3">
+          <img class="rounded-4" src="./img/person.png" />
+          <h3 class="mt-3">Ольга Федорова</h3>
+          <p class="text-1 mt-2">Генеральный директор</p>
+          <ul class="contact-link">
+            <li>
+              <a href="/"><img src="./img/icon-linkedn.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-telegram.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-mail.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-odnoklass.svg" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <img class="rounded-4" src="./img/person.png" />
+          <h3 class="mt-3">Ольга Федорова</h3>
+          <p class="text-1 mt-2">Генеральный директор</p>
+          <ul class="contact-link">
+            <li>
+              <a href="/"><img src="./img/icon-linkedn.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-telegram.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-mail.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-odnoklass.svg" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <img class="rounded-4" src="./img/person.png" />
+          <h3 class="mt-3">Ольга Федорова</h3>
+          <p class="text-1 mt-2">Генеральный директор</p>
+          <ul class="contact-link">
+            <li>
+              <a href="/"><img src="./img/icon-linkedn.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-telegram.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-mail.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-odnoklass.svg" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <img class="rounded-4" src="./img/person.png" />
+          <h3 class="mt-3">Ольга Федорова</h3>
+          <p class="text-1 mt-2">Генеральный директор</p>
+          <ul class="contact-link">
+            <li>
+              <a href="/"><img src="./img/icon-linkedn.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-telegram.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-mail.svg" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="./img/icon-odnoklass.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <div class="row">
+        <h2>Сертификаты и награды</h2>
+        <div
+          class="card-sertificate col-12 d-flex flex-lg-row flex-column mt-3"
+        >
+          <div class="col-lg-4 col-12">
+            <p>04 ноября, 2023</p>
+          </div>
+          <div
+            class="col-lg-8 d-flex flex-lg-row flex-column justify-content-lg-between"
+          >
+            <img class="rounded-4" src="./img/sertificate-01.png" />
+            <h4 class="col-lg-4 col-12 mt-lg-0 mt-3">
+              Reduction Roadmap wins ‘Det Bæredygtige Element 2022’
+            </h4>
+          </div>
+        </div>
+        <div
+          class="card-sertificate col-12 d-flex flex-lg-row flex-column mt-3"
+        >
+          <div class="col-lg-4 col-12">
+            <p>04 ноября, 2023</p>
+          </div>
+          <div
+            class="col-lg-8 d-flex flex-lg-row flex-column justify-content-lg-between"
+          >
+            <img class="rounded-4" src="./img/sertificate-01.png" />
+            <h4 class="col-lg-4 col-12 mt-lg-0 mt-3">
+              Reduction Roadmap wins ‘Det Bæredygtige Element 2022’
+            </h4>
+          </div>
+        </div>
+        <div
+          class="card-sertificate col-12 d-flex flex-lg-row flex-column mt-3"
+        >
+          <div class="col-lg-4 col-12">
+            <p>04 ноября, 2023</p>
+          </div>
+          <div
+            class="col-lg-8 d-flex flex-lg-row flex-column justify-content-lg-between"
+          >
+            <img class="rounded-4" src="./img/sertificate-01.png" />
+            <h4 class="col-lg-4 col-12 mt-lg-0 mt-3">
+              Reduction Roadmap wins ‘Det Bæredygtige Element 2022’
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="mb-3">
+              <a href="index.html" class="mb-2"
+                ><img src="./img/logo-dark.svg"
+              /></a>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="text-1 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="text-1">
+                ОГРН 1215000075388 ИНН 5047253969Юр. адрес: 141703, МО, г.
+                Долгопрудный, ул. Якова Гунина, д. 1, пом. 3
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Информация</p>
+              </li>
+              <li>
+                <a class="text-1" href="/blog.html">Блог</a>
+              </li>
+              <li><a class="text-1" href="/news.html">Новости и анонсы</a></li>
+              <li><a class="text-1" href="/actions.html">Акции</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>О компании</p>
+              </li>
+              <li><a class="text-1" href="/about-company.html">О нас</a></li>
+              <li>
+                <a class="text-1" href="/business.html">Бизнес и возможности</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Контакты</p>
+              </li>
+              <li>
+                <p class="text-1"><span>e-mail:</span> Info@mai.ru</p>
+              </li>
+              <li>
+                <p class="text-1"><span>Телефон:</span> +7 999 999 99 99</p>
+              </li>
+              <li>
+                <p class="text-1">
+                  <span>Время работы:</span> ПН-ПТ: 09:00-17:00 СБ-ВС: Выходной
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <ul
+              class="footer-doc d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-end"
+            >
+              <li class="mr-4">
+                <a class="text-1" href="#">Обработка персональных данных</a>
+              </li>
+              <li class="mr-4">
+                <a class="text-1" href="#">Политика конфиденциальности </a>
+              </li>
+              <li><a class="text-1" href="#">Оферта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Блог</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl container position-relative">
+      <div class="d-flex flex-row justify-content-between flex-grow-1">
+        <a class="navbar-brand ms-3 me-3" href="/">
+          <img src="./img/logo-dark.svg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-white rounded-5 p-2 justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/about-company.html"
+                >О компании</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/catalog.html"
+                >Продукция</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/actions.html"
+                >Акции</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/blog.html"
+                >Блог</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+
+          <ul class="gap-2 mb-0 me-5 d-flex">
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/Search.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/heart-header.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/cart.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/sign.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#"><img src="./img/logo-dark.svg" /></a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/about-company.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/catalog.html"
+              >Продукция</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/actions.html"
+              >Акции</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/blog.html"
+              >Блог</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/contacts.html"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+
+        <ul class="gap-2 mb-0 me-5 d-flex">
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/Search.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/heart-header.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/cart.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/sign.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="container mt-5">
+      <div
+        class="row breadcrumbs d-flex justify-content-between align-items-end"
+      >
+        <div class="d-flex justify-content-between flex-column">
+          <h3>Блог</h3>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Библиотека
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <div class="row gy-4 mt-0 mt-md-4">
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <h4 class="mt-3">
+            Утренний уход за лицом, который помогает взбодриться
+          </h4>
+          <p class="text-1 mt-2">
+            Эксклюзивный мерч для наших преданных поклонников
+          </p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="mb-3">
+              <a href="index.html" class="mb-2"
+                ><img src="./img/logo-dark.svg"
+              /></a>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="text-1 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="text-1">
+                ОГРН 1215000075388 ИНН 5047253969Юр. адрес: 141703, МО, г.
+                Долгопрудный, ул. Якова Гунина, д. 1, пом. 3
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Информация</p>
+              </li>
+              <li>
+                <a class="text-1" href="/blog.html">Блог</a>
+              </li>
+              <li><a class="text-1" href="/news.html">Новости и анонсы</a></li>
+              <li><a class="text-1" href="/actions.html">Акции</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>О компании</p>
+              </li>
+              <li><a class="text-1" href="/about-company.html">О нас</a></li>
+              <li>
+                <a class="text-1" href="/business.html">Бизнес и возможности</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Контакты</p>
+              </li>
+              <li>
+                <p class="text-1"><span>e-mail:</span> Info@mai.ru</p>
+              </li>
+              <li>
+                <p class="text-1"><span>Телефон:</span> +7 999 999 99 99</p>
+              </li>
+              <li>
+                <p class="text-1">
+                  <span>Время работы:</span> ПН-ПТ: 09:00-17:00 СБ-ВС: Выходной
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <ul
+              class="footer-doc d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-end"
+            >
+              <li class="mr-4">
+                <a class="text-1" href="#">Обработка персональных данных</a>
+              </li>
+              <li class="mr-4">
+                <a class="text-1" href="#">Политика конфиденциальности </a>
+              </li>
+              <li><a class="text-1" href="#">Оферта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

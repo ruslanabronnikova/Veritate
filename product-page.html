@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl container position-relative">
+      <div class="d-flex flex-row justify-content-between flex-grow-1">
+        <a class="navbar-brand ms-3 me-3" href="/">
+          <img src="./img/logo-dark.svg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-white rounded-5 p-2 justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/about-company.html"
+                >О компании</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/catalog.html"
+                >Продукция</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/actions.html"
+                >Акции</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/blog.html"
+                >Блог</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+
+          <ul class="gap-2 mb-0 me-5 d-flex">
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/Search.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/heart-header.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/cart.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item">
+                <img src="./img/sign.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#"><img src="./img/logo-dark.svg" /></a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/about-company.html"
+              >О компании</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/catalog.html"
+              >Продукция</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/actions.html"
+              >Акции</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/blog.html"
+              >Блог</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/contacts.html"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+
+        <ul class="gap-2 mb-0 me-5 d-flex">
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/Search.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/heart-header.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/cart.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item">
+              <img src="./img/sign.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <section class="container mt-5">
+      <div
+        class="row breadcrumbs d-flex justify-content-between align-items-end"
+      >
+        <div class="d-flex justify-content-between flex-column">
+          <h3>Новости и события</h3>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Библиотека
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5">
+      <div class="row">
+        <div
+          class="container-img-product col-xxl-6 col-xl-6 col-lg-6 col-md-12 animate__animated animate__backInLeft animate__slow"
+        >
+          <button class="btn-save">
+            <img class="img-save" src="./img/heart-outline.svg" />
+          </button>
+          <img class="img-zoom" src="./img/product.png" />
+        </div>
+
+        <div
+          class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex justify-content-between flex-column animate__animated animate__backInRight animate__slower"
+        >
+          <div class="d-flex flex-column mt-3 mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0">
+            <h2>Сыворотка с витамином С</h2>
+            <div class="d-flex flex-column">
+              <p class="text-1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="text-1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="text-1">Артикул: 000</p>
+                <p class="text-1">Отзывов: 0</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="d-flex mb-0">
+                  <li>
+                    <a class="star" data-value="1"
+                      ><img src="./img/star-outline.svg" alt="1 star"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="star" data-value="1"
+                      ><img src="./img/star-outline.svg" alt="1 star"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="star" data-value="1"
+                      ><img src="./img/star-outline.svg" alt="1 star"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="star" data-value="1"
+                      ><img src="./img/star-outline.svg" alt="1 star"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="star" data-value="1"
+                      ><img src="./img/star-outline.svg" alt="1 star"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="d-flex justify-content-between mb-3">
+              <h3>3 745 ₽</h3>
+              <button class="button">
+                Купить <img src="./img/icon-btn.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content p-3">
+            <div class="modal-header p-3 pb-4 border-bottom-0">
+              <h4 class="mb-0">Оставить свой отзыв</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div
+                  class="mb-3 d-flex align-items-center justify-content-between"
+                >
+                  <p class="text-1 mb-0">Оцените нас:</p>
+                  <ul class="d-flex mb-0">
+                    <li>
+                      <a class="star" data-value="1"
+                        ><img src="./img/star-outline.svg" alt="1 star"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="star" data-value="1"
+                        ><img src="./img/star-outline.svg" alt="1 star"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="star" data-value="1"
+                        ><img src="./img/star-outline.svg" alt="1 star"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="star" data-value="1"
+                        ><img src="./img/star-outline.svg" alt="1 star"
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="star" data-value="1"
+                        ><img src="./img/star-outline.svg" alt="1 star"
+                      /></a>
+                    </li>
+                  </ul>
+                  <input type="hidden" id="rating" name="rating" value="0" />
+                  <!-- Скрытое поле для передачи значения рейтинга -->
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    placeholder="Ваш отзыв"
+                    maxlength="1000"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer border-top-0">
+              <button type="button" class="button">Отправить отзыв</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+          >
+            Описание
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+          >
+            Отзывы
+          </button>
+        </div>
+      </nav>
+      <!-- Описание -->
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <div class="d-flex flex-column mt-3">
+            <p class="text-1">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <p class="text-1">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+        <!-- Отзывы -->
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+          tabindex="0"
+        >
+          <div class="row gy-4 mt-4">
+            <div class="col-lg-6">
+              <div class="d-flex flex-lg-row flex-md-row flex-column">
+                <div
+                  class="d-flex flex-column mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0 mt-3"
+                >
+                  <h4>Иванова Инна Ивановна</h4>
+                  <ul class="d-flex mb-2">
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                  </ul>
+                  <p class="text-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex flex-lg-row flex-md-row flex-column">
+                <div
+                  class="d-flex flex-column mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-0 mt-3"
+                >
+                  <h4>Иванова Инна Ивановна</h4>
+                  <ul class="d-flex mb-2">
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                    <li><img src="./img/star-fill.svg" /></li>
+                  </ul>
+                  <p class="text-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button class="button star">Оставить отзыв <img src="./img/icon-btn.svg" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="mb-3">
+              <a href="index.html" class="mb-2"
+                ><img src="./img/logo-dark.svg"
+              /></a>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="text-1 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="text-1">
+                ОГРН 1215000075388 ИНН 5047253969Юр. адрес: 141703, МО, г.
+                Долгопрудный, ул. Якова Гунина, д. 1, пом. 3
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Информация</p>
+              </li>
+              <li>
+                <a class="text-1" href="/blog.html">Блог</a>
+              </li>
+              <li><a class="text-1" href="/news.html">Новости и анонсы</a></li>
+              <li><a class="text-1" href="/actions.html">Акции</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>О компании</p>
+              </li>
+              <li><a class="text-1" href="/about-company.html">О нас</a></li>
+              <li>
+                <a class="text-1" href="/business.html">Бизнес и возможности</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-2">
+            <ul>
+              <li>
+                <p>Контакты</p>
+              </li>
+              <li>
+                <p class="text-1"><span>e-mail:</span> Info@mai.ru</p>
+              </li>
+              <li>
+                <p class="text-1"><span>Телефон:</span> +7 999 999 99 99</p>
+              </li>
+              <li>
+                <p class="text-1">
+                  <span>Время работы:</span> ПН-ПТ: 09:00-17:00 СБ-ВС: Выходной
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <ul
+              class="footer-doc d-flex flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-column justify-content-end"
+            >
+              <li class="mr-4">
+                <a class="text-1" href="#">Обработка персональных данных</a>
+              </li>
+              <li class="mr-4">
+                <a class="text-1" href="#">Политика конфиденциальности </a>
+              </li>
+              <li><a class="text-1" href="#">Оферта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/card-product.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

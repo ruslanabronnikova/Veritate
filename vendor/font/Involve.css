@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Involve";
+  src: local("Involve Regular"), local("Involve-Regular"),
+    url("../../vendor/font/Involve/Involve-Regular.woff") format("woff"),
+    url("../../vendor/font/Involve/Involve-Regular.otf") format("otf"),
+    url("../../vendor/font/Involve/Involve-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Involve";
+  src: local("Involve Semibold"), local("Involve-Semibold"),
+    url("../../vendor/font/Involve/Involve-SemiBold.woff") format("woff"),
+    url("../../vendor/font/Involve/Involve-SemiBold.otf") format("otf"),
+    url("../../vendor/font/Involve/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: local("Involve Bold"), local("Involve-Bold"),
+      url("../../vendor/font/Involve/Involve-Bold.woff") format("woff"),
+      url("../../vendor/font/Involve/Involve-Bold.otf") format("otf"),
+      url("../../vendor/font/Involve/Involve-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
