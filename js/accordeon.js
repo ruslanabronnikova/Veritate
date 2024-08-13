@@ -6,6 +6,7 @@ class ItcAccordion {
     };
     this._config = Object.assign(defaultConfig, config);
     this.addEventListener();
+    this.openFirstItem(); // Открываем первый элемент при инициализации
   }
 
   addEventListener() {
@@ -24,6 +25,14 @@ class ItcAccordion {
       elHeader.parentElement.classList.toggle('accordion__item_show');
       elHeader.querySelector('.accordion__arrow').classList.toggle('arrow-active');
     });
+  }
+
+  openFirstItem() {
+    const firstItem = this._el.querySelector('.accordion__item');
+    if (firstItem) {
+      firstItem.classList.add('accordion__item_show');
+      firstItem.querySelector('.accordion__arrow').classList.add('arrow-active');
+    }
   }
 }
 

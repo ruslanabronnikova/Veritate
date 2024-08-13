@@ -1,20 +1,15 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-  speed: 800, // Скорость перелистывания в миллисекундах (например, 800 = 0.8 секунды)
-  effect: 'fade', // Эффект "fade" для плавного затухания и появления слайдов
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  autoplay: {
-    delay: 5000, // Задержка между переключениями в миллисекундах (например, 5000 = 5 секунд)
-  },
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.mySwiper', {
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: {
+          delay: 3000, // Время между переключением слайдов в миллисекундах
+          disableOnInteraction: false, // Автовоспроизведение не остановится при взаимодействии
+      },
+  });
 });
+

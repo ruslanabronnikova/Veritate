@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./vendor/font/adventpro.css" />
     <link rel="stylesheet" href="./vendor/font/Involve.css" />
     <title>Главная</title>
@@ -47,15 +48,15 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/actions.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/actions.html"
                 >Акции</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/blog.html"
+              <a class="nav-link active" aria-current="page" href="/blog.html"
                 >Блог</a
               >
             </li>
@@ -122,10 +123,7 @@
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="/catalog.html"
+            <a class="nav-link active" aria-current="page" href="/catalog.html"
               >Продукция</a
             >
           </li>
@@ -135,18 +133,12 @@
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="/blog.html"
+            <a class="nav-link active" aria-current="page" href="/blog.html"
               >Блог</a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="/contacts.html"
+            <a class="nav-link active" aria-current="page" href="/contacts.html"
               >Контакты</a
             >
           </li>
@@ -176,31 +168,46 @@
         </ul>
       </div>
     </div>
-    
-    <section class="container-fluid p-0">
-      <div class="row position-relative">
-        <div class="overlay"></div>
-        <img class="w-100 p-0" src="./img/main-img.png" />
-        <div
-          class="d-flex flex-lg-row flex-column main-cover justify-content-between position-absolute bottom-0 align-items-end"
-        >
-          <h1>
-            Летний уход за лицом
-            <span class="span">со скидкой до 30%</span> на весь ассортимент
-          </h1>
 
-          <button class="button mr-4">
-            Подробнее <img src="./img/icon-btn.svg" />
-          </button>
+    <div class="swiper-container mySwiper position-relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row position-relative">
+            <a href="/" class="p-0">
+              <div class="overlay"></div>
+              <img class="w-100 p-0 main-img" src="./img/main-img.png" />
+              <div
+                class="d-flex flex-lg-row flex-column main-cover justify-content-between position-absolute bottom-0 align-items-end"
+              >
+                <h1>
+                  Летний уход за лицом со скидкой до 30% на весь ассортимент
+                </h1>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="row position-relative">
+            <a href="/" class="p-0">
+              <div class="overlay"></div>
+              <img class="w-100 p-0 main-img" src="./img/main-img2.png" />
+              <div
+                class="d-flex flex-lg-row flex-column main-cover justify-content-between position-absolute bottom-0 align-items-end"
+              >
+                <h1>Идеальная кожа начинается со скидок до 20% на сыворотки</h1>
+              </div>
+            </a>
         </div>
       </div>
-    </section>
+      <div class="swiper-pagination position-absolute bottom-0 mb-2"></div>
+    </div>
 
     <section class="container mt-5">
       <div class="row gy-4 mt-3">
         <div class="d-flex justify-content-between">
           <h2>Новинки</h2>
-          <button class="button">
+          <button class="button" onclick="window.location.href='/catalog.html'">
             Продукция <img src="./img/icon-btn.svg" />
           </button>
         </div>
@@ -414,7 +421,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-4">
-        <button class="button">
+        <button class="button" onclick="window.location.href='/business.html'">
           Присоединиться <img src="./img/icon-btn.svg" />
         </button>
       </div>
@@ -478,23 +485,21 @@
           <p class="text-1">04.06.2024</p>
         </a>
         <a href="/new-page.html" class="col-lg-3">
-          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <img class="rounded-4 w-100" src="./img/blog-2.png" />
+          <p class="text-1 mt-3">Специальная акция на нашу новую продукцию</p>
+          <p class="text-1">04.06.2024</p>
+        </a>
+        <a href="/new-page.html" class="col-lg-3">
+          <img class="rounded-4 w-100" src="./img/blog-3.png" />
           <p class="text-1 mt-3">
-            Эксклюзивный мерч для наших преданных поклонников
+            Новая линейка сыворотки для совершенного ухода
           </p>
           <p class="text-1">04.06.2024</p>
         </a>
         <a href="/new-page.html" class="col-lg-3">
-          <img class="rounded-4 w-100" src="./img/blog-1.png" />
+          <img class="rounded-4 w-100" src="./img/blog-4.svg" />
           <p class="text-1 mt-3">
-            Эксклюзивный мерч для наших преданных поклонников
-          </p>
-          <p class="text-1">04.06.2024</p>
-        </a>
-        <a href="/new-page.html" class="col-lg-3">
-          <img class="rounded-4 w-100" src="./img/blog-1.png" />
-          <p class="text-1 mt-3">
-            Эксклюзивный мерч для наших преданных поклонников
+            Узнайте больше интересного! Читайте другие статьи в нашем блоге
           </p>
           <p class="text-1">04.06.2024</p>
         </a>
@@ -531,9 +536,6 @@
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="accordion" id="accordion-2">
             <div class="accordion__item">
               <p class="accordion__header text-1 mb-0">
                 Каковы основные преимущества продукции ?
@@ -548,9 +550,6 @@
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="accordion" id="accordion-3">
             <div class="accordion__item">
               <p class="accordion__header text-1 mb-0">
                 Каковы основные преимущества продукции ?
@@ -565,9 +564,6 @@
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="accordion" id="accordion-4">
             <div class="accordion__item">
               <p class="accordion__header text-1 mb-0">
                 Каковы основные преимущества продукции ?
@@ -582,8 +578,6 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="accordion" id="accordion-5">
             <div class="accordion__item">
               <p class="accordion__header text-1 mb-0">
                 Каковы основные преимущества продукции ?
@@ -600,7 +594,7 @@
             </div>
           </div>
           <div class="d-flex justify-content-end align-items-end">
-            <button class="button mt-2" type="submit">
+            <button class="button mt-2" type="submit" onclick="window.location.href='/faq.html'">
               Больше ответов <img src="./img/icon-btn.svg" />
             </button>
           </div>
@@ -662,7 +656,7 @@
               id="flexCheckDefault"
             />
             <label class="form-check-label" for="flexCheckDefault">
-              <p class="text-3">
+              <p class="text-1">
                 Я согласен на обработку персональных данных и с
                 условиями политики конфиденциальности
               </p>
@@ -672,8 +666,11 @@
             Отправить <img src="./img/icon-btn.svg" />
           </button>
         </div>
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 mt-3">
-          <img class="rounded-4 w-100" src="./img/form.png" />
+        <div class="col-lg-6 col-12 mt-3">
+          <img
+            class="rounded-4 w-100 h-100 object-fit-cover"
+            src="./img/form.png"
+          />
         </div>
       </div>
     </section>
@@ -764,5 +761,8 @@
 
     <script src="./js/accordeon.js"></script>
     <script src="./js/card-product.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
   </body>
 </html>
