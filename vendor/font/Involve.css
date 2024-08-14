@@ -19,12 +19,11 @@
 }
 
 @font-face {
-    font-family: "Involve";
-    src: local("Involve Bold"), local("Involve-Bold"),
-      url("../../vendor/font/Involve/Involve-Bold.woff") format("woff"),
-      url("../../vendor/font/Involve/Involve-Bold.otf") format("otf"),
-      url("../../vendor/font/Involve/Involve-Bold.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-  }
-  
+  font-family: "Involve";
+  src: local("Involve Bold"), local("Involve-Bold"),
+    url("../../vendor/font/Involve/Involve-Bold.woff") format("woff"),
+    url("../../vendor/font/Involve/Involve-Bold.otf") format("otf"),
+    url("../../vendor/font/Involve/Involve-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}

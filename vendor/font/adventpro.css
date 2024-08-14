@@ -1,19 +1,9 @@
 @font-face {
   font-family: "Advent Pro";
-  src: local("Advent Pro Regular"), local("Advent-Pro-Regular"),
-    url("../../vendor/font/AdventPro/AdventPro-Regular.woff2") format("woff2"),
-    url("../../vendor/font/AdventPro/AdventPro-Regular.woff") format("woff"),
-    url("../../vendor/font/AdventPro/AdventPro-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "AdventPro";
-  src: local("Advent Pro Medium"), local("Advent-Pro-Medium"),
-    url("../../vendor/font/AdventPro/AdventPro-Medium.woff2") format("woff2"),
-    url("../../vendor/font/AdventPro/AdventPro-Medium.woff") format("woff"),
-    url("../../vendor/font/AdventPro/AdventPro-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: local("Advent Pro Light"), local("AdventPro-Light"),
+    url("../../vendor/font/AdventPro/Adventprolight.woff2") format("woff2"),
+    url("../../vendor/font/AdventPro/Adventprolight.woff") format("woff"),
+    url("../../vendor/font/AdventPro/Adventprolight.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
