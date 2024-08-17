@@ -384,12 +384,11 @@ h4 {
 
 .form-control {
   background-color: var(--color-var-back-block);
-  border-radius: 200px;
-  border-left: none;
+  border-radius: 30px;
+  resize: vertical;
   height: 50px;
   padding-left: 30px;
   border: 1px solid var(--color-var-btn-primary);
-  border-left: 0px;
 }
 
 .form-control:focus {
