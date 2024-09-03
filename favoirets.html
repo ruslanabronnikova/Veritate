@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./vendor/font/adventpro.css" />
+    <link rel="stylesheet" href="./vendor/font/Involve.css" />
+    <title>Избранное</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl container position-relative">
+      <div class="d-flex flex-row justify-content-between flex-grow-1">
+        <a class="navbar-brand ms-3 me-3" href="/">
+          <img src="./img/logo-dark.svg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-white rounded-5 p-2 justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/about-company.html">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalog.html">Продукция</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/actions.html">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="gap-2 mb-0 me-5 d-flex">
+            <li>
+              <a href="/" class="btn-item">
+                <img src="./img/Search.svg" />
+              </a>
+            </li>
+            <li>
+              <a href="/favoirets.html" class="btn-item position-relative">
+                <img src="./img/heart-header.svg" />
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge bg-secondary"
+                >
+                  0
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/cart.html" class="btn-item position-relative">
+                <img src="./img/cart.svg" />
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge bg-secondary"
+                >
+                  0
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/signin.html" class="btn-item">
+                <img src="./img/sign.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#"><img src="./img/logo-dark.svg" /></a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/about-company.html">О компании</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/catalog.html">Продукция</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/actions.html">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="gap-2 mb-0 me-5 d-flex">
+          <li>
+            <a href="/" class="btn-item">
+              <img src="./img/Search.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="/favoirets.html" class="btn-item position-relative">
+              <img src="./img/heart-header.svg" />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge bg-secondary"
+              >
+                0
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/cart.html" class="btn-item position-relative">
+              <img src="./img/cart.svg" />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge bg-secondary"
+              >
+                0
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/signin.html" class="btn-item">
+              <img src="./img/sign.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container mt-5">
+      <div
+        class="row breadcrumbs d-flex justify-content-between align-items-end"
+      >
+        <div class="d-flex justify-content-between flex-column">
+          <h3>Избранные товары</h3>
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Главная</a></li>
+              <li class="breadcrumb-item active">Избранное</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+
+          <div
+            class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 mt-3 mb-5"
+          >
+            <div class="col">
+              <div
+                class="bg-white p-4 position-relative rounded-4 d-flex flex-column"
+              >
+                <button class="btn-save">
+                  <img class="img-save" src="./img/heart-outline.svg" />
+                </button>
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="img-product w-100 img-zoom"
+                    src="./img/product.png"
+                  />
+                </div>
+                <div class="d-flex flex-column justify-content-center mt-3">
+                  <p class="text-card text-center">Сыворотка с витамином С</p>
+                  <h4 class="text-center">3 745 ₽</h4>
+                </div>
+
+                <div class="d-flex justify-content-center mt-2 buttonContainer">
+                  <button class="mainButton button w-100">
+                    В корзину <img src="./img/icon-btn.svg" />
+                  </button>
+
+                  <div
+                    class="counterButton d-none justify-content-between align-items-center"
+                  >
+                    <a class="decrement">-</a>
+                    <span class="counter counterValue">1</span>
+                    <a class="increment">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="bg-white p-4 position-relative rounded-4 d-flex flex-column"
+              >
+                <button class="btn-save">
+                  <img class="img-save" src="./img/heart-outline.svg" />
+                </button>
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="img-product w-100 img-zoom"
+                    src="./img/product.png"
+                  />
+                </div>
+                <div class="d-flex flex-column justify-content-center mt-3">
+                  <p class="text-card text-center">Сыворотка с витамином С</p>
+                  <h4 class="text-center">3 745 ₽</h4>
+                </div>
+
+                <div class="d-flex justify-content-center mt-2 buttonContainer">
+                  <button class="mainButton button w-100">
+                    В корзину <img src="./img/icon-btn.svg" />
+                  </button>
+
+                  <div
+                    class="counterButton d-none justify-content-between align-items-center"
+                  >
+                    <a class="decrement">-</a>
+                    <span class="counter counterValue">1</span>
+                    <a class="increment">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="bg-white p-4 position-relative rounded-4 d-flex flex-column"
+              >
+                <button class="btn-save">
+                  <img class="img-save" src="./img/heart-outline.svg" />
+                </button>
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="img-product w-100 img-zoom"
+                    src="./img/product.png"
+                  />
+                </div>
+                <div class="d-flex flex-column justify-content-center mt-3">
+                  <p class="text-card text-center">Сыворотка с витамином С</p>
+                  <h4 class="text-center">3 745 ₽</h4>
+                </div>
+
+                <div class="d-flex justify-content-center mt-2 buttonContainer">
+                  <button class="mainButton button w-100">
+                    В корзину <img src="./img/icon-btn.svg" />
+                  </button>
+
+                  <div
+                    class="counterButton d-none justify-content-between align-items-center"
+                  >
+                    <a class="decrement">-</a>
+                    <span class="counter counterValue">1</span>
+                    <a class="increment">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="bg-white p-4 position-relative rounded-4 d-flex flex-column"
+              >
+                <button class="btn-save">
+                  <img class="img-save" src="./img/heart-outline.svg" />
+                </button>
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="img-product w-100 img-zoom"
+                    src="./img/product.png"
+                  />
+                </div>
+                <div class="d-flex flex-column justify-content-center mt-3">
+                  <p class="text-card text-center">Сыворотка с витамином С</p>
+                  <h4 class="text-center">3 745 ₽</h4>
+                </div>
+
+                <div class="d-flex justify-content-center mt-2 buttonContainer">
+                  <button class="mainButton button w-100">
+                    В корзину <img src="./img/icon-btn.svg" />
+                  </button>
+
+                  <div
+                    class="counterButton d-none justify-content-between align-items-center"
+                  >
+                    <a class="decrement">-</a>
+                    <span class="counter counterValue">1</span>
+                    <a class="increment">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="./js/card-product.js"></script>
+  </body>
+</html>

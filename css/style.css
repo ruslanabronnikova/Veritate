@@ -1,13 +1,12 @@
-
 :root {
   --color-var-back-page: #f4efeb;
   --color-var-back-block: #fff;
   --color-var-btn-primary: #a28f7b;
-  --color-var-btn-light: #F4EFEB;
+  --color-var-btn-light: #f4efeb;
   --color-var-text: #3e4245;
   --color-var-light: #757575;
   --color-var-text-white: #fff;
-  --color-var-title-primary: #D0BAA1;
+  --color-var-title-primary: #d0baa1;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
   padding: 0;
   border: 0;
   height: 100%;
-  font-family: 'Involve', 'sans-serif';
+  font-family: "Involve", "sans-serif";
 }
 
 .row {
@@ -42,7 +41,7 @@ ul {
 h1 {
   font-size: 45px;
   line-height: 1.1;
-  font-family: 'Advent Pro', 'sans-serif';
+  font-family: "Advent Pro", "sans-serif";
   font-weight: 300;
   font-style: normal;
   color: var(--color-var-text);
@@ -51,7 +50,7 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 1.2;
-  font-family: 'Advent Pro', 'sans-serif';
+  font-family: "Advent Pro", "sans-serif";
   font-weight: 300;
   font-style: normal;
   color: var(--color-var-text);
@@ -60,7 +59,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 1.2;
-  font-family: 'Advent Pro', 'sans-serif';
+  font-family: "Advent Pro", "sans-serif";
   font-weight: 300;
   font-style: normal;
   color: var(--color-var-text);
@@ -69,7 +68,7 @@ h3 {
 h4 {
   font-size: 20px;
   line-height: 1.2;
-  font-family: 'Advent Pro', 'sans-serif';
+  font-family: "Advent Pro", "sans-serif";
   font-weight: 300;
   font-style: normal;
   color: var(--color-var-text);
@@ -115,9 +114,9 @@ h4 {
 
 /* Стиль для пагинации Swiper */
 .swiper-pagination-bullet {
-  width: 30px !important; 
+  width: 30px !important;
   height: 8px !important;
-  border-radius: 15px !important; 
+  border-radius: 15px !important;
   background-color: #fff !important;
 }
 
@@ -299,7 +298,6 @@ h4 {
   object-fit: cover;
 }
 
-
 .overlay {
   position: absolute;
   top: 0;
@@ -328,7 +326,7 @@ h4 {
 
 .sidebar-link {
   font-size: 16px;
-  font-family: 'Involve', sans-serif;
+  font-family: "Involve", sans-serif;
   font-weight: 500;
   color: var(--color-var-text);
   transition: all 0.4s;
@@ -553,8 +551,6 @@ h4 {
   gap: 20px;
 }
 
-
-
 @media (max-width: 960px) {
   h1 {
     font-size: 25px;
@@ -609,6 +605,4 @@ h4 {
     padding-right: 20px;
     padding-bottom: 30px;
   }
-
-
 }
