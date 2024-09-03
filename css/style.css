@@ -102,7 +102,11 @@ h4 {
 }
 
 .nav-link:hover {
-  color: var(--color-var-title-primary);
+  color: var(--color-var-btn-primary);
+}
+
+.nav-link.active {
+  color: var(--color-var-btn-primary) !important;
 }
 
 .navbar-expand-xl .navbar-collapse {
