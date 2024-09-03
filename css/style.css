@@ -194,6 +194,18 @@ h4 {
   color: #fff;
 }
 
+.disable {
+  background-color: #b6b6b6;
+  color: #ffffff;
+  cursor: not-allowed; 
+  pointer-events: none; 
+  border: 1px solid #b6b6b6;
+}
+
+.disable img {
+  filter: grayscale(100%);
+}
+
 .page-link {
   color: var(--color-var-btn-primary) !important;
 }
@@ -245,7 +257,7 @@ h4 {
   cursor: pointer;
   border: none;
   padding: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .btn-save img {
